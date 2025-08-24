@@ -13,3 +13,11 @@ dataset/
 
 # OS noise
 .DS_Store
+
+runs/
+datasets/
+*.cache
+
+
+.idea/
+
