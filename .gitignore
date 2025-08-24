@@ -1,0 +1,15 @@
+﻿# Python venv
+.venv/
+__pycache__/
+*.pyc
+
+# YOLO outputs
+runs/
+
+# Datasets and large files
+dataset/
+*.pt
+*.onnx
+
+# OS noise
+.DS_Store
