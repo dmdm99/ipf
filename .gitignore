@@ -1,23 +1,27 @@
-﻿# Python venv
-.venv/
+﻿# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.log
 
-# YOLO outputs
-runs/
+# Virtual env
+.venv/
+venv/
 
-# Datasets and large files
-dataset/
-*.pt
-*.onnx
+# IDE
+.idea/
+.vscode/
 
-# OS noise
-.DS_Store
-
-runs/
+# Data / training artifacts
 datasets/
+runs/
 *.cache
 
-
-.idea/
-
+# Weights & big artifacts (נשתמש ב-LFS לקבצים הכבדים, אבל נחסום ברירת מחדל)
+weights/*.pt
+weights/*.onnx
+weights/*.engine
+weights/*.bin
+weights/*.safetensors

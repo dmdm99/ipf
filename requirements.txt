@@ -1,5 +1,10 @@
-ultralytics
 fastapi
 uvicorn[standard]
-opencv-python
-pyyaml
+pillow==10.3.0
+numpy==1.26.4
+ultralytics==8.3.184
+torch
+torchvision
+torchaudio
+requests
+python-multipart
