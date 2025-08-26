@@ -1,0 +1,67 @@
+* { box-sizing: border-box; font-family: system-ui, Arial, sans-serif; }
+body { margin: 0; background: #f6f7fb; color: #1a1a1a; }
+.container { max-width: 720px; margin: 40px auto; padding: 0 16px; }
+h1 { margin: 0 0 16px; }
+
+.card {
+    background: #fff;
+    border: 1px solid #e9e9ef;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.04);
+}
+.card.small { padding: 12px; }
+
+.label { display: block; margin-bottom: 8px; font-weight: 600; }
+input[type="file"] { display: block; }
+
+.btn {
+    margin-top: 12px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    background: #3a78ff;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn[disabled] { opacity: .5; cursor: not-allowed; }
+
+.status { margin-top: 8px; min-height: 20px; font-size: 14px; color: #555; }
+
+.preview { margin-top: 12px; }
+.preview img {
+    max-width: 100%;
+    max-height: 320px;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid #e9e9ef;
+}
+
+.result-line { display: flex; gap: 12px; align-items: center; margin: 8px 0; }
+.result-label { width: 140px; font-weight: 600; }
+
+.badge {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #eee;
+    font-weight: 700;
+}
+.badge.ok    { background: #dcfce7; color: #166534; } /* ירוק */
+.badge.alert { background: #fee2e2; color: #991b1b; } /* אדום */
+
+.chips { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.chips li {
+    padding: 6px 10px;
+    border: 1px solid #e9e9ef;
+    border-radius: 999px;
+    background: #fafafa;
+    font-size: 14px;
+}
+
+.settings label { display: block; margin: 8px 0; }
+.settings input[type="text"] { width: 100%; padding: 8px; border: 1px solid #e9e9ef; border-radius: 8px; }
+
+.hidden { display: none; }
