@@ -1,0 +1,11 @@
+version: "2.29.2"
+
+services:
+  backend:
+    build: ./Armament_identification
+    ports:
+      - "8010:8000"
+  frontend:
+    build: ./frontend
+    ports:
+      - "8020:80"
