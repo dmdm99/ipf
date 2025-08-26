@@ -1,15 +1,8 @@
-﻿path: C:/Users/ithak/OneDrive/Apps/YOLO PROJACTE IPF
+﻿train: r"C:\Users\ithak\OneDrive\Apps\My First Project.v2i.yolov11\train\images"
+val: r"C:\Users\ithak\OneDrive\Apps\My First Project.v2i.yolov11\valid\images"
+test: r"C:\Users\ithak\OneDrive\Apps\My First Project.v2i.yolov11\test\images"
 
-# מצביעים ישירות לתת-תיקיית ה-images בכל split
-train: train/images
-val: valid/images     # אם אצלך זה val → כתוב val/images
-test: test/images
+nc: 5
+names: ['cluster', 'durandal', 'lgb', 'mk', 'moab']
 
-nc: 6
-names:
-  0: cluster
-  1: durandal
-  2: lgb
-  3: m
-  4: mk
-  5: moab
+

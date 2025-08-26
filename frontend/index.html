@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>זיהוי חימוש – דמו</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<main class="container">
+    <h1>זיהוי חימוש – דמו</h1>
+
+    <!-- תיבת קלט לתמונה + תצוגה מקדימה -->
+    <section class="card">
+        <label for="fileInput" class="label">בחר/י תמונה לבדיקה</label>
+        <input id="fileInput" type="file" accept="image/*" />
+
+        <div id="previewWrap" class="preview hidden">
+            <img id="previewImg" alt="תצוגה מקדימה" />
+        </div>
+
+        <button id="sendBtn" class="btn" disabled>שליחה ל־API</button>
+        <div id="status" class="status"></div>
+    </section>
+
+    <!-- תוצאות -->
+    <section id="results" class="card hidden">
+        <h2>תוצאות</h2>
+
+        <div class="result-line">
+            <span class="result-label">יש חימוש?</span>
+            <span id="hasArmament" class="badge">—</span>
+        </div>
+
+        <div class="result-line">
+            <span class="result-label">סה״כ זיהויים:</span>
+            <span id="totalDetections">—</span>
+        </div>
+
+        <div class="result-line">
+            <span class="result-label">פירוט לפי סוג:</span>
+            <ul id="perClass" class="chips"></ul>
+        </div>
+    </section>
+
+    <!-- אזור הגדרות קלות (אופציונלי, מוסתר כברירת מחדל) -->
+    <details class="card small">
+        <summary>הגדרות מתקדמות (לא חובה)</summary>
+        <div class="settings">
+            <label>כתובת API:
+                <input id="apiBase" type="text" value="http://localhost:8010" />
+            </label>
+            <label>החזר תמונה מסומנת (return_image):
+                <input id="returnImage" type="checkbox" />
+            </label>
+            <label>החזר קופסאות (return_boxes):
+                <input id="returnBoxes" type="checkbox" />
+            </label>
+        </div>
+    </details>
+</main>
+
+<script src="./app.js"></script>
+</body>
+</html>
